@@ -10,7 +10,7 @@ pipeline{
     stage('Deploy to EC2'){
       steps{
         sh '''
-        sudo cp -r * /var/www/html/
+        cp -r * /var/www/html/
         '''
       }
     }
